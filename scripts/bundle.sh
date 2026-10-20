@@ -5,15 +5,17 @@
 # Friends opening it the first time: right-click → Open (it isn't notarized).
 set -eu
 cd "$(dirname "$0")/.."
+ROOT=$(pwd)
+export RUSTFLAGS="${RUSTFLAGS:-} --remap-path-prefix=${HOME}=/build/home --remap-path-prefix=${ROOT}=/build/source"
 
 ARM=aarch64-apple-darwin
 X86=x86_64-apple-darwin
 rustup target add "$ARM" "$X86" >/dev/null
 
 echo "Building (Apple Silicon)…"
-cargo build --release --target "$ARM" --bins
+cargo build --release --locked --target "$ARM" --bins
 echo "Building (Intel)…"
-cargo build --release --target "$X86" --bins
+cargo build --release --locked --target "$X86" --bins
 
 APP="dist/KVNG Studio.app"
 rm -rf "$APP"
