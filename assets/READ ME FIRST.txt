@@ -23,6 +23,6 @@ KVNG Studio — test build (macOS 11 or newer, Apple Silicon or Intel)
 If something goes wrong, note what you did and send a screenshot. Projects are
 autosaved every few minutes; after a crash, KVNG Studio offers to recover them.
 
-Source and license: https://github.com/kvngC/fruity-loops-alternative
+Source and license: https://github.com/kvngC/kvng-studio
 This build is AGPLv3. The release page has the matching source tag, JUCE submodule
 revision, checksum, and known limitations. Keep a copy of important projects.

@@ -4,7 +4,7 @@ The release asset `KVNG-Studio-0.1.0-macOS-universal.zip` contains the actual ma
 
 ## Install and verify
 
-1. Download the zip and its `.sha256` file from the [GitHub release](https://github.com/kvngC/fruity-loops-alternative/releases).
+1. Download the zip and its `.sha256` file from the [GitHub release](https://github.com/kvngC/kvng-studio/releases).
 2. Run `shasum -a 256 KVNG-Studio-0.1.0-macOS-universal.zip` and compare the complete hash with the `.sha256` file.
 3. Unzip, move `KVNG Studio.app` to Applications, and open it. The app is ad hoc signed but not Apple notarized. If macOS blocks the first launch, open **System Settings → Privacy & Security → Open Anyway** for this app.
 4. Choose an audio output and buffer size in **File → Settings…**. The plugin scan is optional and should be run only for plugins you trust.
@@ -14,8 +14,8 @@ Keep copies of important `.kvng` and `.flp` projects. The FL Studio reader suppo
 ## Build from matching source
 
 ```sh
-git clone --recurse-submodules https://github.com/kvngC/fruity-loops-alternative.git
-cd fruity-loops-alternative
+git clone --recurse-submodules https://github.com/kvngC/kvng-studio.git
+cd kvng-studio
 git checkout v0.1.0
 git submodule update --init --recursive
 ./scripts/package.sh

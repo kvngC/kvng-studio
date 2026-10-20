@@ -8,7 +8,7 @@
 
 > **Development build.** This is an independent project, not an Image-Line product. FL Studio projects can contain features or plugins this app cannot reproduce, so keep a copy of the original project when importing one.
 
-**Download:** The [v0.1.0 preview release](https://github.com/kvngC/fruity-loops-alternative/releases) contains a universal macOS app. See the [release guide](docs/RELEASE.md) for installation, verification, source, and known limits.
+**Download:** The [v0.1.0 preview release](https://github.com/kvngC/kvng-studio/releases) contains a universal macOS app. See the [release guide](docs/RELEASE.md) for installation, verification, source, and known limits.
 
 ## What is here
 
@@ -27,8 +27,8 @@ The [feature matrix](docs/FL_PARITY.md) records narrower or missing areas, inclu
 The current host and packaging scripts target **macOS 11 or newer**. Building the plugin host requires Xcode command-line tools, CMake 3.22+, Rust, and the JUCE submodule.
 
 ~~~sh
-git clone --recurse-submodules https://github.com/kvngC/fruity-loops-alternative.git
-cd fruity-loops-alternative
+git clone --recurse-submodules https://github.com/kvngC/kvng-studio.git
+cd kvng-studio
 cargo run --release -p kvng-studio
 ~~~
 
@@ -74,7 +74,6 @@ The app also has `play`, `probe`, and per-channel `render` commands; see [the CL
 
 ~~~sh
 cargo test --workspace
-cargo fmt --all -- --check
 ~~~
 
 The plugin-host build needs the JUCE submodule even when running Rust checks. Audio-device, MIDI-device, and third-party plugin behavior need testing on the target Mac.
