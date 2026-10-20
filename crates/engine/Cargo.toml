@@ -1,0 +1,18 @@
+[package]
+name = "engine"
+version = "0.1.0"
+license = "AGPL-3.0-only"
+edition = "2024"
+description = "KVNG Studio audio engine"
+
+[dependencies]
+flp = { path = "../flp" }
+plughost = { path = "../plughost" }
+bridge = { path = "../bridge" }
+hound = "3.5"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.23"
+midir = "0.11"
+midly = "0.5"
+symphonia = { version = "0.5.5", default-features = false, features = ["aac", "aiff", "alac", "flac", "isomp4", "mp3", "ogg", "vorbis", "pcm", "wav"] }

@@ -1,0 +1,12 @@
+[package]
+name = "plughost"
+version = "0.1.0"
+license = "AGPL-3.0-only"
+edition = "2024"
+description = "Loads VST3 and Audio Unit plugins through a JUCE shim"
+links = "kvng_plughost"
+
+[dependencies]
+
+[build-dependencies]
+cmake = "0.1"

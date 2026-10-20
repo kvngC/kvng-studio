@@ -1,0 +1,28 @@
+KVNG Studio — test build (macOS 11 or newer, Apple Silicon or Intel)
+
+1. Drag "KVNG Studio.app" into your Applications folder.
+
+2. Open it. The first time, macOS will say it can't check the app for malware
+   (it's a test build that isn't notarized by Apple yet). To allow it:
+     • Open System Settings → Privacy & Security, scroll down, and click
+       "Open Anyway" next to KVNG Studio. Confirm with your password.
+   You only need to do this once.
+
+3. On first launch:
+     • Your audio output, buffer size, MIDI devices and plugin folders are in
+       File → Settings… (⌘,).
+     • Plugins: Plugins → Find new plugins scans your VST3 and Audio Unit plugins
+       (each one is checked in a separate process, so a broken plugin can't crash it).
+     • macOS asks for microphone access the first time you record audio.
+
+4. You can open KVNG projects (.kvng) and FL Studio projects (.flp).
+   Sample import accepts WAV, AIFF, FLAC, MP3, Ogg/Vorbis, and M4A audio.
+   The mixer fills the workspace (F9); use "Detach mixer" to move it to its
+   own window, or "Full screen" to use the whole display.
+
+If something goes wrong, note what you did and send a screenshot. Projects are
+autosaved every few minutes; after a crash, KVNG Studio offers to recover them.
+
+Source and license: https://github.com/kvngC/fruity-loops-alternative
+This build is AGPLv3. The release page has the matching source tag, JUCE submodule
+revision, checksum, and known limitations. Keep a copy of important projects.

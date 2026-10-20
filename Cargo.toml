@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = ["crates/flp", "crates/plughost", "crates/bridge", "crates/engine", "crates/kvng-studio"]
+
+
+# Audio code must keep up with real time even in development builds.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3

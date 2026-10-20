@@ -1,0 +1,9 @@
+/target
+/renders
+/dist
+.DS_Store
+*.log
+.env
+.env.*.local
+CLAUDE.md
+PROFESSIONAL_ROADMAP.md
